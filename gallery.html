@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Gallery</title>
+	<style>
+		body{
+			background-color:lightpink;
+			font-family:Arial sans-serif;
+			text-align: center;
+			margin:0;
+			padding:0;
+			display:flex;
+			flex-direction: column;
+			min-height:100vh; /*Ensures footer sticks to bottom*/
+		}
+
+			header{
+				background-color:palevioletred;
+				color:white;
+				padding:20px;
+				text-align:center;
+			}
+			nav{
+				margin:0;
+				padding:0;
+			}
+			ul{
+				list-style-type:none;
+				margin:0;
+				background-color:pink;
+				display:flex;
+				justify-content:center;
+				flex-wrap:wrap;
+			}
+
+			ul li a{
+				display:block;
+				color:brown;
+				padding:14px 16px;
+				text-decoration:none;
+			}
+			ul li a:hover{
+				background-color:black;
+				color:white;
+			}
+
+			main{
+				flex:1;
+				text-align:center;
+				background-color:#ffe6eb;
+				padding:40px;
+			}
+			footer{
+				background:#BC8F8F;
+				color:black;
+				padding:5px;
+				text-align:center;
+				font-family:sans-serif;
+			}
+
+			.favourites{
+				text-align:center;
+				padding:40px;
+			}
+
+			.favourites h2{
+				font-family:'Playfair Display', serif;
+				color:#5b474b;
+				font-size:26px;
+				margin-bottom:10px;
+			}
+			.favourites p{
+				color:#7a6f70;
+				font-size:14px;
+				margin-bottom:40px;
+			}
+			.fav-gallery{
+				display:flex;
+				flex-wrap:wrap;
+				justify-content:center;
+				gap:25px;
+			}
+
+			.fav-card{
+				background-color:white;
+				border-radius:15px;
+				box-shadow:0 4px 10px rgba(0,0,0,0.15);
+				width:300px;
+				overflow:hidden;
+				text-align:center;
+            	display:flex;
+            	flex-direction:column;
+            	justify-content:space-between;
+            	transition:transform 0.4s ease, box-shadow 0.4s ease;
+            	animation: floatCard 3s ease-in-out infinite;
+			}
+
+			.fav-card:hover{
+				transform:translateY(-10px) scale(1.03);
+            	box-shadow:0 12px 20px rgba(0,0,0,0.25);
+			}
+			/* Floating animation */
+        	@keyframes floatCard {
+           		0%, 100% { transform: translateY(0); }
+            	50% { transform: translateY(-6px); }
+			}
+
+			/* Images */
+        	.fav-card img {
+           		width:100%;
+            	height:220px;
+            	object-fit:cover;
+        	}
+
+        	.fav-card h3{
+            	margin:15px 0;
+            	font-size:16px;
+            	color:#5b474b;
+       		}
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>ALIA'S PERSONAL WEBSITE</h1>
+	</header>
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="aboutme.html">About Me</a></li>
+		<li><a href="family.html">Family</a></li>
+		<li><a href="education.html">Education</a></li>
+		<li><a href="experience.html">Experience</a></li>
+		<li><a href="friends.html">Friends</a></li>
+		<li><a href="hobby.html">Hobby</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+
+	</ul>
+</nav>
+
+<main>
+	<section class="favourites">
+		<h2>My Gallery</h2>
+		<p>Here are some of My Favourites Pictures in my gallery</p>
+
+		<div class="fav-gallery">
+
+			<div class="fav-card">
+				<img src="my picture.jpeg" alt="My Picture">
+				<h3>Me</h3>
+			</div>
+
+			<div class="fav-card">
+				<img src="my family.jpeg" alt="My Beloved Family">
+				<h3>My Beloved Family</h3>
+			</div>
+
+			<div class="fav-card">
+				<img src="dendeng.jpeg" alt="My Dendeng">
+				<h3>My Dendeng</h3>
+			</div>
+
+			<div class="fav-card">
+                <img src="My Soulmate.jpeg" alt="My Soulmate">
+                <h3>My Beloved Best Friend</h3>
+            </div>
+
+             <div class="fav-card">
+                <img src="Intern.jpeg" alt="Intern Friends">
+                <h3>Internship Partner</h3>
+            </div>
+
+            <div class="fav-card">
+                <img src="My Achievement.jpeg" alt="Gallery Photo">
+                <h3>Dean's List</h3>
+            </div>
+
+            <div class="fav-card">
+                <img src="My Roomates.jpeg" alt="Gallery Photo">
+                <h3>My Roomates</h3>
+            </div>
+
+            <div class="fav-card">
+                <img src="My Classmates.jpeg" alt="Gallery Photo">
+                <h3>My Diploma Classmates</h3>
+            </div>
+
+            <div class="fav-card">
+                <img src="Intern Programe.jpeg" alt="Gallery Photo">
+                <h3>During Internship Programe</h3>
+            </div>
+
+            <div class="fav-card">
+                <img src="My Mom.jpeg" alt="Gallery Photo">
+                <h3>My Mom</h3>
+            </div>
+
+             <div class="fav-card">
+                <img src="My Dad.jpeg" alt="Gallery Photo">
+                <h3>My Dad</h3>
+            </div>
+
+            <div class="fav-card">
+                <img src="My Big Family.jpeg" alt="Gallery Photo">
+                <h3>My Big Family</h3>
+            </div>
+        </div>
+
+	</section>
+</main> 
+
+	<footer>
+
+		<p>&copy; 2025 This Website is for educational purposes only | Farah Nur Alia Binti Abdul Aziz</p>
+
+	</footer>
+
+</body>
+</html>

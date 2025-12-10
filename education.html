@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style>
+		body{
+			background-color:#ffe6eb;
+			font-family:Arial sans-serif;
+			text-align: center;
+			margin:0;
+			padding:0;
+		}
+
+			header{
+				background-color:palevioletred;
+				color:white;
+				padding:20px;
+				text-align: center;
+			}
+
+			nav ul{
+				list-style-type: none;
+				margin:0;
+				padding:0;
+				background-color:pink;
+				display:flex;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			nav ul li a{
+				display:block;
+				color:brown;
+				padding:14px 16px;
+				text-decoration:none;
+			}
+			nav ul li a:hover{
+				background-color:black;
+				color:white;
+			}
+
+			main{
+				padding:30px 0;
+				text-align: center;
+			}
+
+			/*----Education Layout----*/
+			.education-section{
+				display:flex;
+				flex-direction: column;
+				align-items:center;
+				gap:80px;
+				padding:40px;
+			}
+
+			.edu-container {
+      			position: relative;
+      			display: flex;
+      			align-items: center;
+      			justify-content: center;
+      			max-width: 900px;
+     			transition: transform 0.4s ease, box-shadow 0.4s ease;
+     		}
+
+			.edu-container img {
+      			width: 40%;
+      			border-radius: 40px;
+      			box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      			transition: transform 0.4s ease;
+			}
+
+			.edu-container:hover img {
+      			transform: translateY(-5px);
+			}
+
+			.edu-text-box {
+      			position: absolute;
+      			background-color: #ffe4e1;
+      			border-radius: 20px;
+     			width: 60%;
+      			padding: 25px;
+      			box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      			transition: transform 0.4s ease;
+			}
+
+			.edu-container:hover .edu-text-box {
+      			transform: translateY(-10px);
+			}
+
+			.edu-text-box h3 {
+      			color: brown;
+      			font-size: 22px;
+      			margin-bottom: 10px;
+			}
+
+			.edu-text-box p {
+      			color: #333;
+      			line-height: 1.5;
+      			font-size: 15px;
+			}
+
+			/*----Alternate Layout for Even Cards----*/
+			.edu-left img {
+      			margin-right: auto;
+			}
+
+			.edu-left .edu-text-box {
+      			right: -80px;
+			}
+
+			.edu-right img {
+      			margin-left: auto;
+			
+			}
+
+			.edu-right .edu-text-box {
+      			left: -80px;
+			}
+
+			footer {
+      			background: #BC8F8F;
+      			color: black;
+      			padding: 8px;
+      			text-align: center;
+   			}
+
+    		@media (max-width: 768px) {
+      			.edu-container {
+        		flex-direction: column;
+      		}
+
+      		.edu-text-box {
+       			position: relative;
+        		left: 0 !important;
+        		right: 0 !important;
+        		margin-top: -30px;
+        		width: 80%;
+      		}
+
+      		.edu-container img {
+       		 width: 80%;
+       		}
+       	}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>ALIA'S PERSONAL WEBSITE</h1>
+	</header>
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="aboutme.html">About Me</a></li>
+		<li><a href="family.html">Family</a></li>
+		<li><a href="education.html">Education</a></li>
+		<li><a href="experience.html">Experience</a></li>
+		<li><a href="friends.html">Friends</a></li>
+		<li><a href="hobby.html">Hobby</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+
+	</ul>
+</nav>
+
+<main>
+	<h2>My Education Journey</h2>
+	<p>Here's a glimpse of my education path from the beginning until now.</p>
+
+	<div class="education-section">
+		<!----1st Card---->
+		<div class="edu-container edu-left">
+				<img src="kindergarden.jpeg" alt="Kindergarten">
+				<div class="edu-text-box">
+				<h3>Kindergarten</h3>
+				<p>Tadika Kemas Paya Pulai | 2009-2011</p>
+				<p>I begin my early education at Tadika Kemas when I was around four years old. It was where I learned the basics od reading,writing, and counting. I still remember the colourful classrooms, and how I start to communicate with other kids</p>
+			</div>
+		</div>
+
+		<!----2nd Card (Reversed)---->
+		<div class="edu-container edu-right">
+				<img src="Primary School.jpeg" alt="Primary School">
+			<div class="edu-text-box">
+				<h3>Primary School</h3>
+				<p>Sekolah Kebangsaan Paya Pulai | 2012-2017</p>
+				<p>I begin my early education at Sekolah Kebangsaan Paya Pulai. Those six years were full of fun memories, from joining school events and making new friends to learning important life values. </p>
+			</div>
+		</div>
+
+		<!-- 3rd Card -->
+      	<div class="edu-container edu-left">
+         		 <img src="High School.jpeg" alt="Secondary School">
+         	<div class="edu-text-box">
+          		<h3>Secondary School</h3>
+          		<p>Sekolah Sukan Negeri Pahang, Sekolah Menengah Kebangsaan Seberang Temerloh | 2018-2022</p>
+          		<p>I continue my studies at Sekolah Menengah Kebangsaan Seberang Temerloh (Sports School). My secondary school years taught me discipline, and teamwork. Besides, I was chosen as a target student for the SPM examination and also served as the Head of Pembimbing Rakan Sebaya (PRS) at my school</p>
+        	</div>
+      	</div>
+
+      	<!-- 4th Card (Reversed) -->
+      	<div class="edu-container edu-right">
+         		 <img src="Diploma.jpeg" alt="Diploma Journey">
+        	<div class="edu-text-box">
+          		<h3>Diploma Journey</h3>
+          		<p>Universiti Teknologi MARA (UiTM) | 2023 (Present)</p>
+          		<p>Currently pursuing my Diploma in Information Management (CDIM110), where this course has taugt me the importance of organizing,and managing information effectively in the digital era. It also helps me to develop critical thinking, and communication skills</p>
+        	</div>
+     	 </div>
+     	</div>
+</main> 
+
+	<footer>
+
+		<p>&copy; 2025 This Website is for educational purposes only | Farah Nur Alia Binti Abdul Aziz</p>
+
+	</footer>
+
+</body>
+</html>

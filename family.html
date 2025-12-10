@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>My Family</title>
+
+	<style>
+			body{
+				background-color:#f8e7ea;
+				font-family:Arial sans-serif;
+				margin:0;
+				padding:0;
+				display:flex;
+				flex-direction:column;
+				min-height:100vh;
+				color:#4b2c2c;
+				text-align:center;
+			}
+
+            header{
+				background-color:palevioletred;
+				color:white;
+				padding:20px;
+				letter-spacing:1px;
+			}
+
+			nav ul{
+				list-style:none;
+				margin:0;
+				padding:0;
+				background-color:pink;
+				display:flex;
+				justify-content:center;
+				flex-wrap:wrap;	
+        	}
+
+        	nav ul li a{
+				display:block;
+				color:brown;
+				padding:14px 16px;
+				text-decoration:none;
+				font-weight:bold;
+				transition:0.3s;
+			}
+
+			nav ul li a:hover{
+				background-color:black;
+				color:white;
+				transform:scale(1.1);
+			}
+
+			main{
+				flex:1;
+				padding:40px 20px;
+            	
+        	}
+
+        	/* ----------------------
+		   	FAMILY CARDS SECTION
+			------------------------*/
+			.family-cards{
+				display:flex;
+				flex-direction:column;
+				gap:25px;
+				margin-top:20px;
+			}
+
+			.family-card{
+				display:flex;
+				background:white;
+				border-radius:15px;
+				box-shadow:0 4px 12px rgba(0,0,0,0.1);
+				overflow:hidden;
+				max-width:900px;
+				margin:auto;
+				animation:fadeIn 1s ease;
+				transition:transform 0.3s ease;
+            }
+
+            .family-card:hover{
+				transform:scale(1.02);
+			}
+
+			.family-card img{
+				width:40%;
+				height:250px;
+				object-fit:cover;
+			}
+
+			.family-info{
+				padding:25px;
+				text-align:left;
+			}
+
+			.family-info h3{
+				margin:0 0 10px;
+				font-size:22px;
+				color:#7b4a59;
+
+			}
+
+			.family-info p{
+			margin:5px 0;
+			font-size:15px;
+			line-height:1.5;
+			}
+
+			/* animation */
+			@keyframes fadeIn{
+				from{opacity:0; transform:translateY(20px);}
+				to{opacity:1; transform:translateY(0);}
+			}
+
+			footer{
+				background:#BC8F8F;
+				color:white;
+				padding:10px;
+				text-align:center;
+				font-size:14px;
+			}
+
+			/* Responsive */
+			@media(max-width:768px){
+			.family-card{
+				flex-direction:column;
+				text-align:center;
+			}
+			.family-card img{
+				width:100%;
+				height:250px;
+			}
+			.family-info{
+				text-align:center;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>ALIA'S PERSONAL WEBSITE</h1>
+	</header>
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="aboutme.html">About Me</a></li>
+		<li><a href="family.html">Family</a></li>
+		<li><a href="education.html">Education</a></li>
+		<li><a href="experience.html">Experience</a></li>
+		<li><a href="friends.html">Friends</a></li>
+		<li><a href="hobby.html">Hobby</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+
+	</ul>
+</nav>
+
+<main>
+	
+		<h2 style="font-family:'Georgia'; font-size:32px; color:#7b4a59;">My Lovely Family</h2>
+		<p>Here are the special people who complete my world ♡</p>
+
+	<div class="family-cards">
+
+		<!-- CARD 1 -->
+		<div class="family-card">
+			<img src="My Dad.jpeg" alt="My Dad">
+			<div class="family-info">
+				<h3>My Superhero</h3>
+				<p>Name: Abdul Aziz bin Idris</p>
+				<p>Age: 57</p>
+				<p>My dad is a calm, caring and hardworking person who always puts the family first. He's the kind of man who sacrifices silently. Even when he’s tired, he still finds time to check on us and make sure everything is okay. He does not talk much, but his actions always show how much he loves us</p>
+			</div>
+		</div>
+
+		<!-- CARD 2 -->
+		<div class="family-card">
+			<img src="My Mom1.jpeg" alt="Mama">
+			<div class="family-info">
+				<h3>My Queen</h3>
+				<p>Name: Faridah binti Samah @ Seman</p>
+				<p>Age: 55</p>
+				<p>My mom is the heartbeat of my life. Caring, patient, and always there when we need her. She knows how to comfort us during tough moments and celebrate every small achievement. Her love, strength, and warmth hold the whole family together.</p>
+			</div>
+		</div>
+
+		<!-- CARD 3 -->
+		<div class="family-card">
+			<img src="Abang Piq.jpeg" alt="Eldest Brother">
+			<div class="family-info">
+				<h3>My Eldest Brother</h3>
+				<p>Name: Mohamad Shafiq bin Abdul Aziz</p>
+				<p>Age: 28</p>
+				<p>My older brother is protective and reliable. He may tease me sometimes, but he’s always the first to help whenever I need guidance. He works hard, thinks maturely, and inspires everyone with his determination.</p>
+			</div>
+		</div>
+
+		<!-- CARD 4 -->
+		<div class="family-card">
+			<img src="Abang Kiki.jpeg" alt="Brother 1">
+			<div class="family-info">
+				<h3>My Second Brother</h3>
+				<p>Name: Ahmad Sauqi bin Abdul Aziz</p>
+				<p>Age: 24</p>
+				<p>My second brother is lively, funny, and full of confidence. He’s the type who can turn any boring moment into something entertaining. Even though he likes to joke around, he’s actually very caring in his own way and always knows how to cheer people up. He always tries to make sure I’m okay.</p>
+			</div>
+		</div>
+
+		<!-- CARD 5 -->
+		<div class="family-card">
+			<img src="My Family.jpeg" alt="Brother 2">
+			<div class="family-info">
+				<h3>My Beloved Family</h3>
+				<p>This is the place where I find comfort, strength, and endless support. Each of us has different personalities, but together we create a home filled with laughter, love, and understanding. No matter what challenges come our way, we face them as a team and always choosing to care, to forgive, and to stay close. They are my biggest inspiration and the people I treasure the most in my life</p>
+			</div>
+		</div>
+
+	</div>
+</main>
+
+	<footer>
+
+		<p>&copy; 2025 This Website is for educational purposes only | Farah Nur Alia Binti Abdul Aziz</p>
+
+	</footer>
+
+</body>
+</html>
